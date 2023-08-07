@@ -5,7 +5,15 @@ import Image from "next/image";
 import { Roboto } from "next/font/google";
 
 import { cn } from "@/lib/utils";
-import { LayoutDashboard } from "lucide-react";
+import {
+  Code,
+  ImageIcon,
+  LayoutDashboard,
+  MessageCircleIcon,
+  Music2Icon,
+  Settings,
+  VideoIcon,
+} from "lucide-react";
 
 const roboto = Roboto({
   weight: "500",
@@ -18,6 +26,35 @@ const routes = [
     icon: LayoutDashboard,
     href: "/dashboard",
     color: "text-sky-500",
+  },
+  {
+    label: "Talk-A-Tive",
+    icon: MessageCircleIcon,
+    href: "/dashboard",
+    color: "text-green-600",
+  },
+  {
+    label: "Imaginate",
+    icon: ImageIcon,
+    href: "/dashboard",
+    color: "text-orange-600",
+  },
+  {
+    label: "Melodymaker",
+    icon: Music2Icon,
+    href: "/dashboard",
+    color: "text-pink-700",
+  },
+  {
+    label: "Codecrafter",
+    icon: Code,
+    href: "/dashboard",
+    color: "text-blue-400",
+  },
+  {
+    label: "Settings",
+    icon: Settings,
+    href: "/dashboard",
   },
 ];
 
@@ -37,7 +74,11 @@ const Sidebar = () => {
         </Link>
         <div className="space-y-1">
           {routes.map((route) => (
-            <Link href={route.href} key={route.href}>
+            <Link
+              href={route.href}
+              key={route.href}
+              className="text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition"
+            >
               <div className="flex items-center flex-1">
                 <route.icon className={cn("h-5 w-5 mr-3", route.color)} />
                 {route.label}
