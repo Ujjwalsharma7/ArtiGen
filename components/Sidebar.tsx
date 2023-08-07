@@ -30,31 +30,31 @@ const routes = [
   {
     label: "Talk-A-Tive",
     icon: MessageCircleIcon,
-    href: "/dashboard",
+    href: "/talkative",
     color: "text-green-600",
   },
   {
     label: "Imaginate",
     icon: ImageIcon,
-    href: "/dashboard",
+    href: "/image",
     color: "text-orange-600",
   },
   {
     label: "Melodymaker",
     icon: Music2Icon,
-    href: "/dashboard",
+    href: "/music",
     color: "text-pink-700",
   },
   {
     label: "Codecrafter",
     icon: Code,
-    href: "/dashboard",
+    href: "/code",
     color: "text-blue-400",
   },
   {
     label: "Settings",
     icon: Settings,
-    href: "/dashboard",
+    href: "/settings",
   },
 ];
 
