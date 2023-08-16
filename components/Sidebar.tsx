@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import {
+  Calendar,
   Code,
   ImageIcon,
   LayoutDashboard,
@@ -48,7 +49,7 @@ const routes = [
   },
   {
     label: "Codecrafter",
-    icon: Code,
+    icon: Calendar,
     href: "/code",
     color: "text-blue-400",
   },
