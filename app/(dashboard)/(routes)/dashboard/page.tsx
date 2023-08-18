@@ -6,6 +6,7 @@ import {
   ImageIcon,
   Music2Icon,
   Code,
+  VideoIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -39,6 +40,13 @@ const tools = [
     href: "/code",
     color: "text-blue-400",
     bgColor: "bg-blue-400/10",
+  },
+  {
+    label: "Videofy",
+    icon: VideoIcon,
+    href: "/video",
+    color: "text-red-600",
+    bgColor: "bg-red-600/10",
   },
 ];
 
