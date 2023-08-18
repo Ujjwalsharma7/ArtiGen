@@ -49,9 +49,15 @@ const routes = [
   },
   {
     label: "Codecrafter",
-    icon: Calendar,
+    icon: Code,
     href: "/code",
     color: "text-blue-400",
+  },
+  {
+    label: "Videofy",
+    icon: VideoIcon,
+    href: "video",
+    color: "text-red-600",
   },
   {
     label: "Settings",
