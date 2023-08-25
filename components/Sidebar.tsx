@@ -69,7 +69,7 @@ const routes = [
 const Sidebar = () => {
   const Pathname = usePathname();
   return (
-    <div className=" space-y-4 flex flex-col h-full bg-[#3C3F58] text-white">
+    <div className=" space-y-4 flex flex-col h-full bg-[#212121] text-white">
       <div className="px-3 py-4 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative w-14 h-16 flex">
